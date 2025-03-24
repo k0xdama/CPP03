@@ -5,30 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/23 17:05:31 by u4s2e0r           #+#    #+#             */
-/*   Updated: 2025/03/24 01:30:13 by pmateo           ###   ########.fr       */
+/*   Created: 2025/03/23 22:56:00 by pmateo            #+#    #+#             */
+/*   Updated: 2025/03/24 00:17:02 by pmateo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "ScavTrap.hpp"
+# include "ClapTrap.hpp"
 
 int main(void)
 {
-    ScavTrap	robot("Wall-e");
+	ClapTrap	robot("Chenapan");
 
+	for(int i = 0; i < 11; i++)
+		robot.attack("Sacripand");
+	robot.beRepaired(2);
 	robot.print_stats();
-    for(int i = 0; i < 51; i++)
-		robot.attack("Megatron");
-	robot.guardGate();
-	robot.beRepaired(20);
+	robot.takeDamage(7);
 	robot.print_stats();
-	robot.takeDamage(70);
+	robot.beRepaired(4);
 	robot.print_stats();
-	robot.beRepaired(50);
+	robot.takeDamage(15);
 	robot.print_stats();
-	robot.takeDamage(115);
-	robot.print_stats();
-	robot.beRepaired(100);
-	robot.attack("Eve");
+	robot.beRepaired(10);
+	robot.attack("Salopiaud");
 	robot.print_stats();
 }

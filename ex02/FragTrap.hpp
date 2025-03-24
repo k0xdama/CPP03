@@ -1,67 +1,58 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/23 19:21:43 by pmateo            #+#    #+#             */
-/*   Updated: 2025/03/24 00:30:50 by pmateo           ###   ########.fr       */
+/*   Created: 2025/03/24 01:20:19 by pmateo            #+#    #+#             */
+/*   Updated: 2025/03/24 01:22:36 by pmateo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
+# include "ClapTrap.hpp"
+
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 
 # include "ClapTrap.hpp"
 
 #define MAX_HP 100
 
-class ScavTrap : public ClapTrap
+class FragTrap : public ClapTrap
 {
 	public:
 	
-		ScavTrap( std::string name ) : ClapTrap(name)
+		FragTrap( std::string name ) : ClapTrap(name)
 		{
 			this->hp = 100;
-			this->ep = 50;
-			this->ad = 20;
-			std::cout << "ScavTrap constructor called !" << std::endl;
+			this->ep = 100;
+			this->ad = 30;
+			std::cout << "FragTrap constructor called !" << std::endl;
 		}
 
-		ScavTrap( const ScavTrap &to_copy) : ClapTrap(to_copy)
+		FragTrap( const FragTrap &to_copy) : ClapTrap(to_copy)
 		{
-			std::cout << "ScavTrap copy constructor called !" << std::endl;
+			std::cout << "FragTrap copy constructor called !" << std::endl;
 		}
 
-		ScavTrap	&operator=(const ScavTrap &to_assign)
+		FragTrap	&operator=(const FragTrap &to_assign)
 		{
 			if (this != &to_assign)
 				operator=(to_assign);
 			return (*this);
 		}
 
-		~ScavTrap( void )
+		~FragTrap( void )
 		{
-			std::cout << "ScavTrap destructor called" << std::endl;
+			std::cout << "FragTrap destructor called" << std::endl;
 		}
 
 		void	attack(const std::string &target);
 		void	takeDamage(unsigned int amount);
 		void	beRepaired(unsigned int amount);
 
-		void	guardGate( void );
+		void	highfivesGuys( void );
 };
-
-
-
-
-
-
-
-
-
-
-
 
 #endif

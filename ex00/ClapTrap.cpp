@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/23 17:05:31 by u4s2e0r           #+#    #+#             */
-/*   Updated: 2025/03/24 00:27:49 by pmateo           ###   ########.fr       */
+/*   Created: 2025/03/23 22:57:22 by pmateo            #+#    #+#             */
+/*   Updated: 2025/03/23 22:57:27 by pmateo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,5 +77,4 @@ void    ClapTrap::print_stats( void )
     std::cout << "hit points = " << this->hp << std::endl;
     std::cout << "energy points = " << this->ep << std::endl;
     std::cout << "attack damage = " << this->ad << std::endl;
-
 }

@@ -6,7 +6,7 @@
 /*   By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 14:19:48 by pmateo            #+#    #+#             */
-/*   Updated: 2025/03/24 00:27:54 by pmateo           ###   ########.fr       */
+/*   Updated: 2025/03/23 22:56:58 by pmateo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class ClapTrap
 {
-	protected:
+	private:
 		std::string name;
 		int			hp = 10; //Health points
 		int			ep = 10; //Energy points

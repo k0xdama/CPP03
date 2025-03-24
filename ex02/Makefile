@@ -6,7 +6,7 @@
 #    By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 18:07:58 by pmateo            #+#    #+#              #
-#    Updated: 2025/03/24 00:21:36 by pmateo           ###   ########.fr        #
+#    Updated: 2025/03/24 01:31:34 by pmateo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,11 +15,11 @@ FLAGS = -std=c++98 -Wall -Werror -Wextra -g
 RM = rm -f 
 .DEFAULT_GOAL := all
 
-NAME = ScavTrap
+NAME = FragTrap
 
-INCFILES = ClapTrap.hpp ScavTrap.hpp
+INCFILES = ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
 
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 OBJ = ${SRCS:.cpp=.o}
 

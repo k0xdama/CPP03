@@ -6,7 +6,7 @@
 #    By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 18:07:58 by pmateo            #+#    #+#              #
-#    Updated: 2025/03/23 14:19:11 by pmateo           ###   ########.fr        #
+#    Updated: 2025/03/29 00:01:25 by pmateo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ ${NAME}: ${OBJ} ${INCFILES}
 		${CC} ${FLAGS} -o ${NAME} ${OBJ}
 
 all: ${NAME}
-				@echo "\033[1;5;32m# FIXED IS READY ! #\033[0m"
+				@echo "\033[1;5;32m# CLAPTRAP IS READY ! #\033[0m"
 
 clean:
 				@${RM} ${OBJ} ${OBJ_BONUS}

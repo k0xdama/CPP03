@@ -6,7 +6,7 @@
 /*   By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 18:12:22 by pmateo            #+#    #+#             */
-/*   Updated: 2025/03/28 00:13:30 by pmateo           ###   ########.fr       */
+/*   Updated: 2025/03/28 20:11:27 by pmateo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,9 @@ class DiamondTrap : public ScavTrap, public FragTrap
 			std::cout << "DiamondTrap destructor called !" << std::endl;
 		}
 
-		void	attack(const std::string &target);
+		void	attack( const std::string &target );
+		void	takeDamage( unsigned int amount);
+		void	beRepaired( unsigned int amount);
 
 		void	whoAmI( void );
 

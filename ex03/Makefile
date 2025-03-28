@@ -6,7 +6,7 @@
 #    By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 18:07:58 by pmateo            #+#    #+#              #
-#    Updated: 2025/03/27 18:20:09 by pmateo           ###   ########.fr        #
+#    Updated: 2025/03/28 20:15:00 by pmateo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,9 +17,9 @@ RM = rm -f
 
 NAME = DiamondTrap
 
-INCFILES = ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
+INCFILES = ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.hpp
 
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 
 OBJ = ${SRCS:.cpp=.o}
 

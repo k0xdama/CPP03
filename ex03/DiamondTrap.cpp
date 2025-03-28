@@ -6,7 +6,7 @@
 /*   By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 00:13:42 by pmateo            #+#    #+#             */
-/*   Updated: 2025/03/28 00:16:47 by pmateo           ###   ########.fr       */
+/*   Updated: 2025/03/28 20:13:42 by pmateo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,16 @@
 void	DiamondTrap::attack( const std::string &target )
 {
 	ScavTrap::attack(target);
+}
+
+void	DiamondTrap::takeDamage( unsigned int amount )
+{
+	FragTrap::takeDamage(amount);
+}
+
+void	DiamondTrap::beRepaired( unsigned int amount )
+{
+	FragTrap::takeDamage(amount);
 }
 
 void	DiamondTrap::whoAmI( void )

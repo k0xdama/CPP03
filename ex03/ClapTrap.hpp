@@ -6,7 +6,7 @@
 /*   By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 14:19:48 by pmateo            #+#    #+#             */
-/*   Updated: 2025/03/24 00:27:54 by pmateo           ###   ########.fr       */
+/*   Updated: 2025/03/28 20:15:58 by pmateo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class ClapTrap
 
 		ClapTrap( std::string name ) : name(name)
 		{
-			std::cout << "ClapTrap constructor called !" << std::endl;
+			std::cout << "ClapTrap default constructor called !" << std::endl;
 		}
 
 		ClapTrap(const ClapTrap &to_copy) : name (to_copy.name), hp(to_copy.hp), ep(to_copy.ep), ad(to_copy.ad)

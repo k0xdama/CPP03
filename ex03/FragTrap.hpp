@@ -6,7 +6,7 @@
 /*   By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 01:20:19 by pmateo            #+#    #+#             */
-/*   Updated: 2025/03/27 23:36:58 by pmateo           ###   ########.fr       */
+/*   Updated: 2025/03/28 20:16:05 by pmateo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class FragTrap : virtual public ClapTrap
 			this->hp = 100;
 			this->ep = 100;
 			this->ad = 30;
-			std::cout << "FragTrap constructor called !" << std::endl;
+			std::cout << "FragTrap default constructor called !" << std::endl;
 		}
 
 		FragTrap( const FragTrap &to_copy) : ClapTrap(to_copy)

@@ -6,7 +6,7 @@
 /*   By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 01:20:19 by pmateo            #+#    #+#             */
-/*   Updated: 2025/03/24 01:22:36 by pmateo           ###   ########.fr       */
+/*   Updated: 2025/04/17 23:33:05 by pmateo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,30 +23,10 @@ class FragTrap : public ClapTrap
 {
 	public:
 	
-		FragTrap( std::string name ) : ClapTrap(name)
-		{
-			this->hp = 100;
-			this->ep = 100;
-			this->ad = 30;
-			std::cout << "FragTrap constructor called !" << std::endl;
-		}
-
-		FragTrap( const FragTrap &to_copy) : ClapTrap(to_copy)
-		{
-			std::cout << "FragTrap copy constructor called !" << std::endl;
-		}
-
-		FragTrap	&operator=(const FragTrap &to_assign)
-		{
-			if (this != &to_assign)
-				operator=(to_assign);
-			return (*this);
-		}
-
-		~FragTrap( void )
-		{
-			std::cout << "FragTrap destructor called" << std::endl;
-		}
+		FragTrap( std::string name );
+		FragTrap( const FragTrap &to_copy);
+		FragTrap	&operator=(const FragTrap &to_assign);
+		~FragTrap( void );
 
 		void	attack(const std::string &target);
 		void	takeDamage(unsigned int amount);

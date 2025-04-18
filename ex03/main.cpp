@@ -6,7 +6,7 @@
 /*   By: pmateo <pmateo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 17:05:31 by u4s2e0r           #+#    #+#             */
-/*   Updated: 2025/03/28 20:21:09 by pmateo           ###   ########.fr       */
+/*   Updated: 2025/04/18 04:59:03 by pmateo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ int main(void)
     DiamondTrap	robot("Droideka");
 
 	robot.print_stats();
-    for(int i = 0; i < 101; i++)
-		robot.attack("C-3PO");
+    // for(int i = 0; i < 101; i++)
+	// 	robot.attack("C-3PO");
 	robot.highfivesGuys();
 	robot.guardGate();
 	robot.whoAmI();
